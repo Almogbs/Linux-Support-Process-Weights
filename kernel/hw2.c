@@ -33,7 +33,7 @@ asmlinkage int sys_get_weight(void) {
 
 asmlinkage int sys_get_leaf_children_sum(void) {
     if (list_empty(&current->children))
-        return -EINVAL;
+        return -ECHILD;
 
     return recursiveWeights(current);
 }
