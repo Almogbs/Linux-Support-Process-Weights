@@ -943,9 +943,9 @@ asmlinkage long sys_statx(int dfd, const char __user *path, unsigned flags,
 
 // our code
 asmlinkage long sys_hello(void);
-asmlinkage int sys_set_weight(int weight);
-asmlinkage int sys_get_weight(void);
-asmlinkage int sys_get_leaf_children_sum(void);
-asmlinkage pid_t sys_get_heaviest_ancestor(void);
+asmlinkage long sys_set_weight(int weight);
+asmlinkage long sys_get_weight(void);
+asmlinkage long sys_get_leaf_children_sum(void);
+asmlinkage long sys_get_heaviest_ancestor(void);
 
 #endif
